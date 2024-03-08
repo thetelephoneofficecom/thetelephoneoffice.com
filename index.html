@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Telephone Office</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #000; /* Change text color to black */
+        }
+        .header {
+            background-color: #00ABE4;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+		
+		.header p a {
+            color: #fff; /* Set link color to white */
+            text-decoration: none; /* Remove underline from links */
+            margin: 0 5px; /* Add spacing between links */
+        }
+        .header p a:hover {
+            text-decoration: underline; /* Underline links on hover */
+        }
+		
+		
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Clearfix */
+        }
+        .mission {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            text-align: center; /* Center align the text */
+        }
+        .description {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .services {
+            display: flex;
+            justify-content: space-between; /* Evenly distribute items in the row */
+            margin-top: 2rem;
+            flex-wrap: wrap; /* Wrap items to next line if necessary */
+        }
+        .service {
+            flex-basis: calc(33.33% - 20px); /* Each service takes up 33.33% width with 20px spacing */
+            margin-bottom: 20px; /* Spacing between rows */
+            text-align: center; /* Center align the content */
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+            padding: 10px; /* Add padding to make hover effect more noticeable */
+        }
+        .service:hover {
+            background-color: #e0e0e0; /* Darken background on hover */
+        }
+        .service img {
+            width: 100%; /* Make sure the image fills its container */
+            border-radius: 5px;
+        }
+        .service h2 {
+            margin-top: 0.5rem; /* Adjust spacing for the heading */
+            color: #000; /* Change heading color to black */
+        }
+        .service p {
+            color: #000; /* Change paragraph text color to black */
+        }
+        .service a {
+            text-decoration: none; /* Remove underline from links */
+            color: #000; /* Change link color to black */
+        }
+        .contact {
+            margin-top: 2rem;
+            text-align: center; /* Center align the content */
+        }
+        .contact h2 {
+            margin-bottom: 1rem;
+        }
+        .contact p {
+            margin-bottom: 0.5rem;
+        }
+        .contact a {
+            text-decoration: none; /* Remove underline from contact links */
+            color: #000; /* Change contact link color to black */
+        }
+		
+		.horizontal-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .horizontal-list li {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>The Telephone Office</h1>
+		<p><a href="index.html">Home</a> | <a href="estateagent.html">Estate Agent</a> | <a href="smallbusiness.html">Small Business</a> | <a href="other.html">Other</a> | <a href="contactus.html">Contact Us</a></p>
+    </div>
+    <div class="content">
+        <div class="mission">
+            Keeping you connected with Telecommunication services.
+            <div class="description">
+                Explore our range of services tailored to meet your needs.
+            </div>
+        </div>
+        
+        <!-- Services Section -->
+        <div class="services">
+            <div class="service">
+                <a href="estateagent.html">
+                    <img src="12481.png" alt="Estate Agents">
+                    <h2>Estate Agents</h2>
+                    <p>Facilitate smooth communication with our reliable telecommunication solutions.</p>
+                </a>
+            </div>
+            <div class="service">
+                <a href="smallbusiness.html">
+                    <img src="https://www.nhmagazine.com/content/uploads/2022/04/j/h/hannah-grimes-shop-scaled.jpg" alt="Small Business">
+                    <h2>Small Business</h2>
+                    <p>Boost productivity and collaboration with our business communication services.</p>
+                </a>
+            </div>
+            <div class="service">
+                <a href="other.html">
+                    <img src="Untitled.png" alt="Other">
+                    <h2>Other</h2>
+                    <p>Explore our miscellaneous services designed to meet various communication needs.</p>
+                </a>
+            </div>
+        </div>
+        <!-- End of Services Section -->
+        
+        <!-- Contact Us Section -->
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:info@thetelephoneoffice.com">info@thetelephoneoffice.com</a></p>
+            <p>Phone: <a href="tel:+442080502112">020 8050 2112</a></p>
+        </div>
+		<br><hr><br>
+		<div class="section">
+            <ul class="horizontal-list">
+                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg/2203px-Microsoft_Office_Teams_%282018%E2%80%93present%29.svg.png" alt="teams logo" height="40"></li>
+                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/3CX_logo.svg/1200px-3CX_logo.svg.png" alt="3CX logo" height="40"></li>
+                <li><img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/55a6582b0000ff00058113ab/0x0.png" alt="yay.com logo" height="40"></li>
+                <li><img src="freepbx.png" alt="FreePBX logo" height="40"></li>
+            </ul>
+        </div>
+        <!-- End of Contact Us Section -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estate Agents - The Telephone Office</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #000; /* Change text color to black */
+        }
+        .header {
+            background-color: #00ABE4;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Clearfix */
+            background-color: #fff; /* White background */
+            margin-top: 20px; /* Add space between header and content */
+        }
+        .section {
+            padding: 2rem;
+            margin-bottom: 20px;
+            border-radius: 5px;
+			text-align: center;
+        }
+        .section:nth-child(odd) {
+            background-color: #f9f9f9; /* Light gray background for odd sections */
+        }
+        .section:nth-child(even) {
+            background-color: #e6f7ff; /* Light blue background for even sections */
+        }
+        .service {
+            text-align: center;
+        }
+        .service img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .service h2 {
+            color: #000;
+            font-weight: bold;
+        }
+        .service p {
+            color: #444;
+            line-height: 1.5;
+        }
+        .header p a {
+            color: #fff; /* Set link color to white */
+            text-decoration: none; /* Remove underline from links */
+            margin: 0 5px; /* Add spacing between links */
+        }
+        .header p a:hover {
+            text-decoration: underline; /* Underline links on hover */
+        }
+        /* Pop-up styles */
+        .popup {
+            display: none; /* Initially hidden */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff; /* White background */
+            padding: 20px;
+            text-align: center;
+            z-index: 9999; /* Ensure the pop-up is on top */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+        }
+        .popup.fadeOut {
+            animation: fadeOut 0.5s ease-in-out; /* Fade-out animation */
+        }
+        .popup h2 {
+            margin-top: 0;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: #666;
+        }
+        .close:hover {
+            color: #000;
+        }
+        .enquire-btn {
+            background-color: #00ABE4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        .enquire-btn:hover {
+            background-color: #0085b6;
+        }
+        /* Fade-in animation keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        /* Fade-out animation keyframes */
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+        /* Added styling for horizontal list */
+        .horizontal-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .horizontal-list li {
+            margin-right: 10px;
+        }
+		
+		 .service-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>The Telephone Office</h1>
+        <p><a href="index.html">Home</a> | <a href="estateagent.html">Estate Agent</a> | <a href="smallbusiness.html">Small Business</a> | <a href="other.html">Other</a> | <a href="contactus.html">Contact Us</a></p>
+    </div>
+    <div class="content">
+        <div class="section">
+            <h2>Other Bbusiness, Organization, or Home</h2>
+            <img src="https://thetelephoneoffice.co.uk/Logo.svg" alt="about" height="80">
+            <p>The Telephone Office provides comprehensive telephone solutions for businesses, organizations, and homes.</p>
+            <p>Our mission is to deliver top-tier telecommunications consulting and management services tailored to the unique needs of our clients, ensuring seamless communication and enhanced productivity.</p>
+        </div>
+        <div class="section">
+            <div class="service">
+                <img src="https://www.coreofficeit.co.uk/wp-content/uploads/2014/10/home-phone-e1413277939970.png" alt="Phone System" height="200">
+                <h2>Telephone Solutions for Every Need</h2>
+                <p>We offer a range of telephone solutions for businesses, organizations, and homes, providing seamless communication and reliable connectivity.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>What We Do</h2>
+            <ul class="service-list">
+                <li>
+                    <h3>Customized Systems</h3>
+                    <p>We design and implement customized telephone systems tailored to the unique requirements of businesses, organizations, and homes.</p>
+                </li>
+                <li>
+                    <h3>Installation and Maintenance</h3>
+                    <p>Our team handles installation and maintenance services, ensuring smooth operation and minimal downtime for your telephone infrastructure.</p>
+                </li>
+                <li>
+                    <h3>Support and Assistance</h3>
+                    <p>We provide ongoing support and assistance, addressing any issues or concerns related to your telephone systems promptly and efficiently.</p>
+                </li>
+                <!-- Add more services here if needed -->
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="service">
+                <img src="https://www.demandsage.com/wp-content/uploads/2023/12/free-trial-1.png" alt="Free Trial" height="80">
+                <h2>Experience Our Solutions</h2>
+                <p>Try a Microsoft Teams, 3CX or Yay.com phone system for your business, organization, or home with a 3 week free trial. Experience the reliability and efficiency of our services today!</p>
+                <a href="enquire.html" class="enquire-btn">Enquire Now</a>
+            </div>
+        </div>
+        <div class="section">
+            <ul class="horizontal-list">
+                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg/2203px-Microsoft_Office_Teams_%282018%E2%80%93present%29.svg.png" alt="teams logo" height="40"></li>
+                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/3CX_logo.svg/1200px-3CX_logo.svg.png" alt="3CX logo" height="40"></li>
+                <li><img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/55a6582b0000ff00058113ab/0x0.png" alt="yay.com logo" height="40"></li>
+                <li><img src="freepbx.png" alt="FreePBX logo" height="40"></li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <!-- Pop-up -->
+    <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img src="https://www.demandsage.com/wp-content/uploads/2023/12/free-trial-1.png" alt="Free Trial" height="80">
+        <h2>Experience Our Solutions</h2>
+        <p>Try a Microsoft Teams, 3CX or Yay.com phone system for your business, organization, or home with a 3 week free trial. Experience the reliability and efficiency of our services today!</p>
+        <a href="enquire.html" class="enquire-btn">Enquire Now</a>
+    </div>
+	
+
+
+    <!-- JavaScript for the pop-up -->
+    <script>
+        // Get the pop-up element
+        var popup = document.getElementById("popup");
+
+        // Function to show the pop-up
+        function showPopup() {
+            popup.style.display = "block"; // Show the pop-up
+        }
+
+        // Function to close the pop-up
+        function closePopup() {
+            popup.classList.add("fadeOut"); // Add fade-out animation class
+            setTimeout(() => {
+                popup.style.display = "none"; // Hide the pop-up after animation completes
+                popup.classList.remove("fadeOut"); // Remove fade-out animation class for next use
+            }, 500); // Wait for fade-out animation duration (500ms)
+        }
+
+        // Wait for 4 seconds before showing the pop-up
+        setTimeout(showPopup, 4000);
+    </script>
+</body>
+</html>
+       
