@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Porting - The Telephone Office</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="number-porting-styles.css"> <!-- Specific styles for number porting page -->
+    <link rel="icon" href="logo16x16.png" type="image/png">
+    <meta name="description" content="Check if your UK landline or national number can be ported to VoIP with The Telephone Office.">
+    <meta name="keywords" content="VoIP, number porting, UK landline, national number, VoIP eligibility">
+    <meta name="author" content="The Telephone Office">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="number-porting.html">Number Porting</a></li>
+                <li><a href="numbers.html">Numbers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Number Porting</h1>
+            <p>Check if your UK landline or national number can be ported to VoIP.</p>
+        </div>
+    </header>
+
+    <section id="number-porting-benefits" class="section">
+        <div class="container">
+            <h2>Enjoy all the benefits of VoIP while keeping your old business numbers with our simple number porting process!</h2>
+            <h3>Benefits of VoIP:</h3>
+            <ul>
+                <li><strong>More Flexibility:</strong> VoIP allows you to manage calls from anywhere, on any device.</li>
+                <li><strong>Lower Costs:</strong> Save money on communication expenses compared to traditional phone systems.</li>
+            </ul>
+            <h3>Number Porting Made Easy:</h3>
+            <ol>
+                <li>Provide the numbers you wish to port (£25 per number ex-VAT).</li>
+                <li>Submit the necessary documents:
+                    <ul>
+                        <li>A copy of a bill (including the number).</li>
+                        <li>Proof of identity (passport or driver’s license).</li>
+                        <li>Proof of address (bank statement).</li>
+                    </ul>
+                </li>
+            </ol>
+            <h3>Important:</h3>
+            <ul>
+                <li>Your full name and address should match exactly with the information on your current service provider’s records. If you have moved to a new location or changed your name, please let us know.</li>
+                <li>Do NOT cancel or change any services with your old number provider until the porting process is complete.</li>
+            </ul>
+            <p>Switching to VoIP is hassle-free and ensures you retain your existing business numbers without interruption.</p>
+            <p>At The Telephone Office, we do all the hard work for you, allowing you to focus on what you do best.</p>
+        </div>
+    </section>
+
+    <section id="number-porting-form" class="section">
+        <div class="container">
+            <h2>Check Eligibility</h2>
+            <form id="porting-form">
+                <label for="number">Enter your number:</label>
+                <input type="text" id="number" name="number" placeholder="e.g., 0123456789" required>
+                <button type="button" id="check-eligibility-button">Check Eligibility</button>
+            </form>
+            <div id="porting-results" class="results"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 The Telephone Office. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('check-eligibility-button').addEventListener('click', checkEligibility);
+
+        function checkEligibility() {
+            const number = document.getElementById('number').value.trim();
+            let normalizedNumber = number.replace(/\s+/g, '');
+
+            if (normalizedNumber.startsWith('+44')) {
+                normalizedNumber = normalizedNumber.slice(3);
+            } else if (normalizedNumber.startsWith('44')) {
+                normalizedNumber = normalizedNumber.slice(2);
+            }
+
+            const firstTwoDigits = normalizedNumber.slice(0, 2);
+            const firstFourDigits = normalizedNumber.slice(0, 4);
+
+            if (firstTwoDigits === '07' || firstFourDigits === '4407') {
+                alert(`The number ${number} cannot be ported to VoIP.`);
+            } else if (firstTwoDigits === '01' || firstTwoDigits === '02' || firstTwoDigits === '03' ||
+                       firstFourDigits === '4401' || firstFourDigits === '4402' || firstFourDigits === '4403') {
+                alert(`The number ${number} can be ported to VoIP for £30.`);
+            } else {
+                alert(`The number ${number} is not recognized for porting.`);
+            }
+        }
+    </script>
+</body>
+</html>

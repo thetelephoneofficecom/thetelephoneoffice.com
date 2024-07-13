@@ -1,0 +1,88 @@
+/* Numbers page specific styles */
+
+#numbers-header {
+    background: url('https://thetelephoneofficecom.wordpress.com/wp-content/uploads/2024/07/barber-handshake.webp') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#numbers-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+#numbers-header .hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+#numbers-header h1 {
+    margin: 0;
+    font-size: 3em;
+    text-transform: uppercase;
+    animation: fadeInDown 1s ease-out;
+}
+
+#numbers-header p {
+    font-size: 1.5em;
+    animation: fadeInUp 1s ease-out;
+}
+
+.section h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.section p, .section ul {
+    font-size: 1.2em;
+    animation: fadeInUp 1s ease-out;
+}
+
+.section ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
