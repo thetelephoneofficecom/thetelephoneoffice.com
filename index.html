@@ -3,128 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Telephone Office</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="logo16x16.png" type="image/png">
-    <meta name="description" content="The Telephone Office - VoIP Telephone Consultancy Experts. Save up to 75% with VoIP compared to analogue lines.">
-    <meta name="keywords" content="VoIP, telephone consultancy, save money, business communication, number porting, keep your number, flexible phone systems">
-    <meta name="author" content="The Telephone Office">
+    <title>Site Update | The Telephone Office</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f0f0f0, #d9d9d9);
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+        .update-msg {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .hover-box {
+            width: 100px;
+            height: 100px;
+            background-color: #ff5733;
+            margin: 20px auto;
+            border-radius: 8px;
+            transition: transform 0.5s ease;
+        }
+        .hover-box:hover {
+            transform: rotate(360deg) scale(1.5);
+        }
+        .contact-info {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .contact-info span {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .moving-background {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(0, 123, 255, 0.2);
+            top: 30%;
+            left: 30%;
+            border-radius: 50%;
+            animation: moveBackground 8s infinite ease-in-out;
+        }
+        @keyframes moveBackground {
+            0% {transform: translate(0, 0);}
+            50% {transform: translate(100px, 200px);}
+            100% {transform: translate(0, 0);}
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="number-porting.html">Number Porting</a></li>
-                <li><a href="numbers.html">Numbers</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <header id="home" class="hero-section">
-        <div class="hero-content">
-            <h1>Welcome to The Telephone Office</h1>
-            <p>Your VoIP Telephone Consultancy Experts</p>
-            <p>Save up to 75% with VoIP compared to analogue lines.</p>
-            <a href="contact.html" class="cta-button">Get Started</a>
-        </div>
-    </header>
+<div class="container">
+    <h1 class="update-msg">This site is being updated!</h1>
+    <div class="hover-box"></div>
 
-    <section id="contact-info" class="section contact-info">
-        <div class="container">
-            <p>Call 020 3793 9646 | Email info@thetelephoneoffice.com</p>
-        </div>
-    </section>
+    <div class="contact-info">
+        <span><strong>The Telephone Office</strong></span>
+        <span>Email: <a href="mailto:info@thetelephoneoffice.com">info@thetelephoneoffice.com</a></span>
+        <span>Phone: <a href="tel:+443300438805">0330 043 8805</a></span>
+    </div>
+</div>
 
-    <section id="benefits" class="section benefits">
-        <div class="container">
-            <h2>Benefits</h2>
-            <p>VoIP provides your team with increased flexibility and significantly reduces your phone bill. Answer calls from anywhere, add voice menus, and enjoy features like music on hold and call recording.</p>
-        </div>
-    </section>
+<div class="moving-background"></div>
 
-    <section id="number-porting" class="section number-porting">
-        <div class="container">
-            <h2>Keep Your Number</h2>
-            <p>We work with our VoIP service providers to ensure you keep your numbers</p>
-            <p>£30 inc VAT per number one time</p>
-            <a href="number-porting.html" class="cta-button">Lean More</a>
-        </div>
-    </section>
-
-    <section id="costs" class="section costs">
-        <div class="container">
-            <h2>Costs</h2>
-            <p>On average, we save our clients 65% by switching to VoIP, with some saving up to 75%!</p>
-            <p>We understand that buying new phones can be costly. That’s why you can use your existing phones with our VoIP services, allowing you to benefit from cheaper calls and convenient mobile apps.</p>
-            <h3>Our pricing is straightforward:</h3>
-            <ul>
-                <li><strong>Number Porting:</strong> £30 inc VAT per number to port your numbers.</li>
-                <li><strong>Consulting and setup:</strong> £25 inc VAT per hour</li>
-                <li><strong>Maintenance Contract:</strong> £20 inc VAT per month.</li>
-                <li><strong>Work Provided (In-contract):</strong> £15 inc VAT per hour</li>
-                <li><strong>Work Provided (Out-Contract):</strong> £78 inc VAT per hour</li>
-            </ul>
-            <p>Switch to VoIP today and start enjoying significant savings and greater flexibility!</p>
-            <h3>Only spend £980 per year (that’s a £7,220 saving)</h3>
-            <p>VoIP: Setup: £200, Contract: £240, Work Provided: £540 (£15p/hr) = £980</p>
-            <p>Old: Setup: £400, Contract: £2400, Work Provided: £5,400 = £8200</p>
-            <p>The work provided is based on 3 hours of service per month over a 12-month period. For the old telephone system, the setup fee is a flat-rate of £400, with a monthly contract cost of £200 and an hourly rate of £150 for work provided</p>
-            <a href="contact.html" class="cta-button">Contact Us</a>
-        </div>
-    </section>
-
-    <section id="old-phones" class="section old-phones">
-        <div class="container">
-            <h2>Keep Your Old Phones</h2>
-            <p>We understand that buying new phones can be costly. That’s why you can use your existing phones with our VoIP services, allowing you to benefit from cheaper calls and convenient mobile apps.</p>
-        </div>
-    </section>
-
-    <section id="numbers" class="section numbers">
-        <div class="container">
-            <h2>Numbers To Fit Your Business</h2>
-            <p>We are able to obtain 01, 02, 03 and 07 numbers for your business via our trusted providers</p>
-            <a href="numbers.html" class="cta-button">Learn More</a>
-        </div>
-    </section>
-
-    <section id="providers" class="section providers">
-        <div class="container">
-            <h2>Our Providers</h2>
-            <p>We work with a range of companies to make sure your business communications work for you. Our providers include Hubspot, Tawk.to, FreePBX, 3CX, Yay.com, and Twilio.</p>
-            <a href="contact.html" class="cta-button">Get Started</a>
-        </div>
-    </section>
-
-    <section id="clients" class="section clients">
-        <div class="container">
-            <h2>Our Clients</h2>
-            <p>333 Security, and more.</p>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 The Telephone Office. All rights reserved.</p>
-        </div>
-    </footer>
-    
-    <script src="scripts.js"></script>
-
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/66b9defe0cca4f8a7a74ded9/1i530u52j';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
 </body>
 </html>
